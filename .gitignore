@@ -1,0 +1,5 @@
+node_modules
+stash
+build
+.vs
+.vscode
