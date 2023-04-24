@@ -1,9 +1,7 @@
-const testAddon = require('./addon');
+const addon = require('./build/Release/addon');
 
-const helloWords = testAddon.hello();
 
-console.log(helloWords);
-
-const sumFromCpp = testAddon.add(2, 1);
-
-console.log(sumFromCpp);
+const fn = (msg) => {
+	console.log(msg);
+}
+console.log(addon(fn));
